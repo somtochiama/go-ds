@@ -8,7 +8,7 @@ type Set struct {
 	arr []interface{}
 }
 
-func (s *Set) add(e interface{}) error{
+func (s *Set) Add(e interface{}) error{
 	for _, item := range(s.arr) {
 		if item == e {
 			return errors.New("Item already in set.")
